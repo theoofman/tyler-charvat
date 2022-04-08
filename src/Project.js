@@ -10,9 +10,9 @@ function Project(props) {
   return (
     <div className="project collapsible">
       <div className="projectHeader" {...getToggleProps()}>
-        <h1>
+        <h3>
           {props.title} {isExpanded ? "▼" : "▲"}
-        </h1>
+        </h3>
       </div>
       <div className="projectBody" {...getCollapseProps()}>
         <a href={props.link} target="_blank">
