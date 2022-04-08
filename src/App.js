@@ -7,8 +7,8 @@ import './App.css';
 function Projects(){
     return(
         <div className="projects">
-            <Project title="Website" image={website} description="testing this is a website" link="/" />
-            <Project title="Algebra" image={algebra} description="wow this actually works" link="https://github.com/theoofman/quadratic" />
+            <Project title="Website" image={website} description="Portfolio website built using React.js" link="https://github.com/theoofman/tyler-charvat" />
+            <Project title="Quadratic Calculator" image={algebra} description="Basic Quadratic Calculator using Python and Tkinter" link="https://github.com/theoofman/quadratic" />
         </div>
     )
 }
