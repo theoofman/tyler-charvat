@@ -1,0 +1,33 @@
+.project{
+  display:inline-block;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  width: 350px;
+  height: 100%;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top:10px;
+}
+.project:hover{
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.projectHeader{
+  margin-left:30px;
+}
+.projectDescription{
+  display:block;
+}
+.projectImage{
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width:100%;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}

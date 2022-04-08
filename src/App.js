@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
+import Project from './Project';
+import website from './website.jpeg';
+import algebra from './algebra.jpeg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function Projects(){
+    return(
+        <div className="projects">
+            <Project title="Website" image={website} description="testing this is a website" link="/" />
+            <Project title="Algebra" image={algebra} description="wow this actually works" link="https://github.com/theoofman/quadratic" />
+        </div>
+    )
 }
+function App(props){
+    return(
+        <div>
+            <h1 className="title">Projects</h1>
+            <Projects />
+        </div>
+    )
+};
 
 export default App;
