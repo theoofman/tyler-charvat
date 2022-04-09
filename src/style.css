@@ -1,4 +1,5 @@
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: gainsboro;
+    background: rgb(19,66,55);
+    background: linear-gradient(90deg, rgba(19,66,55,1) 0%, rgba(9,121,96,1) 33%, rgb(158, 236, 106) 67%, rgba(172,177,178,1) 100%);
 }
