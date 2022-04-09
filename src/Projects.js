@@ -7,8 +7,8 @@ function Projects(){
         <>
         <h1 className="title">Projects</h1>
         <div className="projects">
-            <Project title="Website" image={website} description="Portfolio website built using React.js" link="https://github.com/theoofman/tyler-charvat" />
-            <Project title="Quadratic Calculator" image={algebra} description="Basic Quadratic Calculator using Python and Tkinter" link="https://github.com/theoofman/quadratic" />
+            <Project title="Website" image={website} description="Portfolio Website that demonstrates knowledge of html, styling, and react.js" link="https://github.com/theoofman/tyler-charvat" languages={["Javascript","React.js"]} />
+            <Project title="Quadratic Calculator" image={algebra} description="Basic Quadratic Calculator that demonstrates ability to create algorithms and basic use of python command line arguments" link="https://github.com/theoofman/quadratic" languages={["Python"]} />
         </div>
         </>
     )

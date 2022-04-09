@@ -18,6 +18,12 @@ code {
   border-radius: 10%;
 }
 .projectBody{
-  display: flex;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width:100%;
+}
+.projectFooter{
   justify-content: center;
+  display:block;
 }

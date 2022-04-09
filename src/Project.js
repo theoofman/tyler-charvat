@@ -7,6 +7,12 @@ import useCollapse from 'react-collapsed';
 
 function Project(props) {
   const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
+  var rows = [];
+  for (var i = 0; i < props.languages.length; i++) {
+      // note: we are adding a key prop here to allow react to uniquely identify each
+      // element in this array. see: https://reactjs.org/docs/lists-and-keys.html
+      rows.push(<p key={i}>{props.languages[i]}</p>);
+  }
   return (
     <div className="project collapsible">
       <div className="projectHeader" {...getToggleProps()}>
@@ -21,6 +27,12 @@ function Project(props) {
           <p className="projectDescription">{props.description}</p>
         </div>
         </a>
+        <div className="projectFooter">
+          <p>Languages:</p>
+          <div className="projectLanguages">
+            {rows}
+          </div>
+        </div>
       </div>
     </div>
   );
